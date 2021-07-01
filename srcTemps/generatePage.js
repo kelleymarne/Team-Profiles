@@ -2,7 +2,7 @@ const { builtinModules } = require("module");
 
 function generatePage(Team) {
 console.log({Team}); 
-return `
+let data =  `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,5 +33,7 @@ return `
 </html>
 
 `
+return data;
+ 
 }
 module.exports = generatePage;

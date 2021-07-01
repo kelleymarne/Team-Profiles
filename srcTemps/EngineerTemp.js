@@ -1,7 +1,8 @@
 function addEngineer(Engineer) {
-    return ` <div class="card" style="width: 18rem;">
+    return ` <div class="col">
+    <div class="card" style="width: 18rem;">
         <div class="card-header bg-success">
-            <h4>#{Engineer.name}</h4>
+            <h4 class="text-light">${Engineer.name}</h4>
             <h5><i class="bi bi-gear"></i> Engineer</h5>
         </div>
         <ul class="list-group list-group-flush">
@@ -9,6 +10,7 @@ function addEngineer(Engineer) {
             <li class="list-group-item">${Engineer.roleDetails} </li>
             <a href="${Engineer.email}" class="btn btn-secondary">${Engineer.email}</a>
         </ul>
+    </div>
     </div>
     `
 }

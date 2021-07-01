@@ -14,7 +14,6 @@ const generatePage = require('./srcTemps/generatePage');
 // create an empty array to push the information into
 const employees = [];
 
-// Functions to initialize the app
 
 // Prompt for questions
 function addMember() {
@@ -70,7 +69,8 @@ inquirer.prompt([
                 addMember()
             } else {
                let finalHTML = generatePage(employees);
-
+            
+               fs.writeFileSync(path.resolve('./dist/finalHtml.html'), finalHTML)
                 // function to end the prompts
             }
         })
@@ -80,9 +80,9 @@ inquirer.prompt([
 
 function htmlRender(data){
     switch (data.role) {
-        case 'Engineer':  employees.push( EngingeerTemp(data)); break;
-        case  'Manager': break;
-        case  'Intern': break;
+        case 'Engineer':  employees.push(EngingeerTemp(data)); break;
+        case  'Manager': employees.push(ManagerTemp(data)); break;
+        case  'Intern': employees.push(InternTemp(data)); break;
     
         default:
             break;
