@@ -4,6 +4,10 @@ const inquirer = require('inquirer');
 // const Engineer = require('./lib/Engineer');
 // const Manager = require('./lib/Manager')
 // const Intern = require('./lib/Intern')
+const EngingeerTemp = require('./srcTemps/EngineerTemp');
+const InternTemp = require('./srcTemps/InternTemp');
+const ManagerTemp = require('./srcTemps/ManagerTemp');
+const generatePage = require('./srcTemps/generatePage');
 
 
 
@@ -54,11 +58,37 @@ inquirer.prompt([
         {
             type: 'confirm',
             name: 'addMore',
-            message: 'Would you like to add more team members?'
-            
-        }
-]);
+            message: 'Would you like to add more team members?',       
+        }])
+        .then(function(data) {
+
+            let allData = {...data, name, id, email, role};
+            htmlRender(allData);
+
+            if(data.addMore) {
+
+                addMember()
+            } else {
+               let finalHTML = generatePage(employees);
+
+                // function to end the prompts
+            }
+        })
     })
 }
+
+
+function htmlRender(data){
+    switch (data.role) {
+        case 'Engineer':  employees.push( EngingeerTemp(data)); break;
+        case  'Manager': break;
+        case  'Intern': break;
+    
+        default:
+            break;
+    }
+    console.log(employees)
+}
+
 
 addMember();

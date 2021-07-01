@@ -43,6 +43,8 @@ And lastly this will output an html into our output folder.
 ## Challenges
 I started by creating my constructors first, which i know is backwards. I am still really struggling with the testing factor of how things go. I do have a session with my tutor today and i plan to have him really go into depth on how the testing process works. I didnt want to let that hold me up to much so i did end up at least pseudo coding out the constructors first.
 
+Creating the proper functions is always trickier for me. Knowing when to create a seperate function for something else or writing it within in a function.
+
 
 ---
 ## Victories
@@ -56,6 +58,10 @@ I just started to create my constructors. This was still extremely fresh in my m
 Next i knew that i was going to need templates for the HTML that was going to be generated. I decided to go with Bootstrap and use the cards. That seemed like the simplest options as well as what matched the mock up best.
 
 I just created 3 seperate HTML files and put the basic bones of what each 'Roles' card would look like.
+
+---
+
+I have actually really liked using inquirer the last little bit. I just made sure to set up my questions i knew i was going to be neeing. It was a little  for me to figure out how to best set up the quesion based on the role they chose for that member. i was able to figure out how to go about setting up the next question depending on what their choice was from the role.
 
 
 
