@@ -1,9 +1,9 @@
 const fs = require('fs')
 const path = require('path')
 const inquirer = require('inquirer');
-// const Engineer = require('./lib/Engineer');
-// const Manager = require('./lib/Manager')
-// const Intern = require('./lib/Intern')
+const Engineer = require('./lib/Engineer');
+const Manager = require('./lib/Manager')
+const Intern = require('./lib/Intern')
 const EngingeerTemp = require('./srcTemps/EngineerTemp');
 const InternTemp = require('./srcTemps/InternTemp');
 const ManagerTemp = require('./srcTemps/ManagerTemp');
@@ -47,6 +47,7 @@ inquirer.prompt([
             roleDetails = "school name";            
         } else {
             roleDetails = "office phone number";
+            
         }
     inquirer.prompt([
         {
