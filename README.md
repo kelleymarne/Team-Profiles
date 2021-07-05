@@ -33,9 +33,9 @@ We will have a main page that will help us to run the application with the promp
 We will also have a JS page for our over all Parent class of Employee, as well has the children classes as well of Intern, Manager, and Engineer
 > Employee.js Intern.js Manager.js Engineer.js
 This application also requires to have test suites for each of those previous pages.
-
+> Employee.test.js Intern.test.js Manager.test.js Engineer.test.js
 And lastly this will output an html into our output folder. 
-> ./output/team.html
+> ./output/finalHtml.html
 
 
 ---
@@ -45,8 +45,17 @@ I started by creating my constructors first, which i know is backwards. I am sti
 
 Creating the proper functions is always trickier for me. Knowing when to create a seperate function for something else or writing it within in a function.
 
+---
+
+I had some issues when running my tests. I couldnt for the life of me get them to work correctly. After reaching out to some classmates and getting someone else to look over my code with me, we realized the issue lied with how i had set up my class constructors with the extenders. I had made the class it was extending from like a function. After we found that bug we got the test suites working perfectly
+
 
 ---
+
+![screenshot!](./screenshots/tests.jpg)
+
+---
+
 ## Victories
 
 This is a very hefty project so far. It has included the most amount of hard coded seperate pages weve done yet. I knew this was going to be a big challenge for me. I started off with what was the most familiar to me. 
@@ -64,9 +73,18 @@ I just created 3 seperate HTML files and put the basic bones of what each 'Roles
 I have actually really liked using inquirer the last little bit. I just made sure to set up my questions i knew i was going to be neeing. It was a little  for me to figure out how to best set up the quesion based on the role they chose for that member. i was able to figure out how to go about setting up the next question depending on what their choice was from the role.
 
 
-
-
 ---
 
 
 ## Resources 
+
+<a href="https://youtu.be/aL2bAmRM51E">YouTube Walkthrough</a>
+
+<a href="https://github.com/kelleymarne/Team-Profiles">GitHub Repo
+</a>
+
+
+<a href="www.stackoverflow">StackOverflow</a>
+
+<a href="https://github.com/SBoudrias/Inquirer.js/tree/master/packages/inquirer/examples">Git Hub Inquirer 
+</a>

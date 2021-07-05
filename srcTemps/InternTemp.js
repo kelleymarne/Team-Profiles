@@ -8,7 +8,7 @@ function addIntern(Intern) {
         <ul class="list-group list-group-flush">
             <li class="list-group-item">${Intern.id}</li>
             <li class="list-group-item">${Intern.roleDetails} </li>
-            <a href="${Intern.email}" class="btn btn-secondary">${Intern.email}</a>
+            <a href="mailto:${Intern.email}" class="btn btn-secondary">${Intern.email}</a>
         </ul>
     </div>
     </div>

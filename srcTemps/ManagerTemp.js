@@ -8,7 +8,7 @@ return ` <div class="col">
         <ul class="list-group list-group-flush">
             <li class="list-group-item">${Manager.id}</li>
             <li class="list-group-item">${Manager.officeNumber} </li>
-            <a href="${Manager.email}" class="btn btn-secondary">${Manager.email}</a>
+            <a href="mailto:${Manager.email}" class="btn btn-secondary">${Manager.email}</a>
         </ul>
     </div>
 </div>

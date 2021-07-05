@@ -7,8 +7,8 @@ function addEngineer(Engineer) {
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">${Engineer.id}</li>
-            <li class="list-group-item">${Engineer.roleDetails} </li>
-            <a href="${Engineer.email}" class="btn btn-secondary">${Engineer.email}</a>
+            <li class="list-group-item"><a href="https://www.github.com/${Engineer.roleDetails}" target="_blank">${Engineer.roleDetails}</a></li>
+            <a href="mailto:${Engineer.email}" class="btn btn-secondary">${Engineer.email}</a>
         </ul>
     </div>
     </div>
