@@ -30,10 +30,13 @@ This command line driven applicaiton will allow you to input the information for
 For this project we were given no starter code at all. Just getting started on to it ive already realized we will have many pages associated with this applicaiton. 
 We will have a main page that will help us to run the application with the prompted questions
 > index.js
+
 We will also have a JS page for our over all Parent class of Employee, as well has the children classes as well of Intern, Manager, and Engineer
 > Employee.js Intern.js Manager.js Engineer.js
+
 This application also requires to have test suites for each of those previous pages.
 > Employee.test.js Intern.test.js Manager.test.js Engineer.test.js
+
 And lastly this will output an html into our output folder. 
 > ./output/finalHtml.html
 
