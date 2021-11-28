@@ -1,12 +1,11 @@
-# Challenge 10 - Team Profile Generator
+# Team Profile Generator
 > Lets create a webpage to neatly store your teams information!
 ---
 
 ### Table of Contents
 - [Description](#description)
 - [Introduction](#introduction)
-- [Challenges](#challenges)
-- [Victories](#victories)
+- [Technologies](#technologies)
 - [Resources](#resources)
 
 ---
@@ -27,7 +26,7 @@ This command line driven applicaiton will allow you to input the information for
 
 ## Introduction 
 
-For this project we were given no starter code at all. Just getting started on to it ive already realized we will have many pages associated with this applicaiton. 
+First - 
 We will have a main page that will help us to run the application with the prompted questions
 > index.js
 
@@ -40,54 +39,34 @@ This application also requires to have test suites for each of those previous pa
 And lastly this will output an html into our output folder. 
 > ./output/finalHtml.html
 
+___
+### Instructions on Use
+
+- First we will want to run our npm install to download the needed dependancies
+> npm i / install
+
+- Second to run the application 
+> npm start
 
 ---
 
-## Challenges
-I started by creating my constructors first, which i know is backwards. I am still really struggling with the testing factor of how things go. I do have a session with my tutor today and i plan to have him really go into depth on how the testing process works. I didnt want to let that hold me up to much so i did end up at least pseudo coding out the constructors first.
+## Technologies
 
-Creating the proper functions is always trickier for me. Knowing when to create a seperate function for something else or writing it within in a function.
-
----
-
-I had some issues when running my tests. I couldnt for the life of me get them to work correctly. After reaching out to some classmates and getting someone else to look over my code with me, we realized the issue lied with how i had set up my class constructors with the extenders. I had made the class it was extending from like a function. After we found that bug we got the test suites working perfectly
+- Node
+- Inquirer
+- Jest testing packages
 
 
 ---
 
-![screenshot!](./screenshots/tests.jpg)
-
----
-
-## Victories
-
-This is a very hefty project so far. It has included the most amount of hard coded seperate pages weve done yet. I knew this was going to be a big challenge for me. I started off with what was the most familiar to me. 
-
-I just started to create my constructors. This was still extremely fresh in my mind as we had done a lot of it in class this weel already.
-
----
-
-Next i knew that i was going to need templates for the HTML that was going to be generated. I decided to go with Bootstrap and use the cards. That seemed like the simplest options as well as what matched the mock up best.
-
-I just created 3 seperate HTML files and put the basic bones of what each 'Roles' card would look like.
-
----
-
-I have actually really liked using inquirer the last little bit. I just made sure to set up my questions i knew i was going to be neeing. It was a little  for me to figure out how to best set up the quesion based on the role they chose for that member. i was able to figure out how to go about setting up the next question depending on what their choice was from the role.
-
-
----
 
 
 ## Resources 
 
-<a href="https://youtu.be/aL2bAmRM51E">YouTube Walkthrough</a>
 
 <a href="https://github.com/kelleymarne/Team-Profiles">GitHub Repo
 </a>
+- https://github.com/kelleymarne/Team-Profiles
 
 
-<a href="www.stackoverflow">StackOverflow</a>
 
-<a href="https://github.com/SBoudrias/Inquirer.js/tree/master/packages/inquirer/examples">Git Hub Inquirer 
-</a>
